@@ -1,0 +1,541 @@
+@import "../vendor/normalize.scss";
+@import "../fonts/fonts";
+
+$textColor1: #fff;
+$textColor2: #000;
+$backColor: #000;
+$backColor1: #25e197;
+$backColor2: #ffd233;
+$cardBackColor: #1c1c1e;
+
+.page {
+  background-color: $backColor;
+  width: 100vw;
+  color: $textColor1;
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  border: $backColor;
+  max-width: 1440px;
+}
+
+.body {
+  margin: 0;
+}
+
+.main {
+  padding: 0 30px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 60px;
+  }
+
+  @media screen and (max-width: 320px) {
+    padding: 0 20px;
+  }
+
+  &__subtitle {
+    font-size: 32px;
+    padding: 60px 130px 0;
+    font-weight: normal;
+    line-height: 40px;
+    margin: 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+      padding: 60px 0 0;
+      line-height: 30px;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: 12px;
+      line-height: 18px;
+      padding: 52px 0 0;
+    }
+  }
+
+  &__service-cleaning {
+    background-color: $cardBackColor;
+    padding: 0;
+  }
+
+  &__last-subtitle {
+    padding: 60px 130px 0;
+    @media screen and (max-width: 768px) {
+      padding: 42px 0 0;
+    }
+    @media screen and (max-width: 320px) {
+        padding: 30px 0 0;
+      }
+  }
+}
+
+.subtitle-grey {
+  color: #8e8e98;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  padding: 120px 130px 0 130px;
+
+  @media screen and (max-width: 768px) {
+    padding: 120px 0 42px 0;
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 320px) {
+    padding: 70px 0 0 0;
+    grid-template-columns: 1fr;
+  }
+
+  &__subtitle {
+    font-size: 32px;
+    padding: 17px 0;
+    font-weight: normal;
+    line-height: 40px;
+    margin: 0;
+
+    @media screen and (max-width: 768px) {
+        font-size: 4.1575vw;
+        line-height: 5.2vw;
+    }
+    
+
+    @media screen and (max-width: 320px) {
+      font-size: 24px;
+      line-height: 32px;
+      padding: 8px 0 20px;
+    }
+  }
+
+  &__card {
+    padding: 0 40px;
+    background-color: $cardBackColor;
+    border-radius: 10px;
+    margin: 0 0 62px 0;
+    &:hover {
+      background: #232327;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 0 0 20px 0;
+    }
+    @media screen and (max-width: 320px) {
+      padding: 0 20px;
+    }
+  }
+
+  &__info {
+    font-size: 18px;
+    font-weight: normal;
+    padding-top: 36px;
+    margin: 0;
+    @media screen and (max-width: 768px) {
+      padding-top: 38px;
+      font-size: 2.4vw;
+    }
+
+    @media screen and (max-width: 320px) {
+      padding-top: 18px;
+    }
+  }
+
+  &__price {
+    color: $backColor1;
+    font-size: 14px;
+    margin: 0;
+    padding: 22px 0 38px;
+
+    @media screen and (max-width: 320px) {
+      font-size: 12px;
+      line-height: 18px;
+      padding: 80px 0 20px;
+    }
+  }
+}
+
+.header {
+  padding-left: 160px;
+  padding-top: 60px;
+  display: grid;
+  grid-template-rows: 3;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 60px;
+  }
+
+  @media screen and (max-width: 320px) {
+    padding-left: 20px;
+    padding-top: 24px;
+  }
+
+  &__title {
+    font-size: 112px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 50px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 9.1vw;
+      padding-top: 74px;
+      padding-bottom: 4px;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: 50px;
+      padding-top: 60px;
+      padding-bottom: 12px;
+    }
+  }
+  &__subtitle {
+    font-size: 80px;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 216px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 6.5vw;
+      line-height: 60px;
+      padding-bottom: 470px;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: 30px;
+      padding-bottom: 256px;
+      line-height: 38px;
+    }
+  }
+
+  &__subtitle-info {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #47474c;
+    margin: 0;
+    padding: 14px 10px 118px;
+
+    @media screen and (max-width: 768px) {
+        padding: 6px 10px 56px;
+    }
+  }
+}
+
+.subtitle-mobile {
+  @media screen and (max-width: 320px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.form-question {
+  display: flex;
+  border: none;
+  padding: 0;
+  width: 569px;
+  margin: 0;
+  height: 50px;
+  background-color: rgba(142, 142, 152, 0.2);
+  border-radius: 9px;
+  &:hover {
+    background: rgba(142, 142, 152, 0.3);
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 648px;
+  }
+
+  &__input {
+    outline: none;
+    border: none;
+    margin: 0;
+    height: 50px;
+    background: rgba(142, 142, 152, 0.2);
+    color: #8e8e98;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    padding: 0;
+    width: 348px;
+    border-radius: 8px 0 0 8px;
+    @media screen and (max-width: 768px) {
+      width: 426px;
+    }
+    @media screen and (max-width: 320px) {
+      width: 229px;
+    }
+  }
+
+  &__input-small {
+    @media screen and (max-width: 768px) {
+      width: 55.5vw;
+    }
+    @media screen and (max-width: 540px) {
+        width: 68.25vw;
+      }
+    @media screen and (max-width: 320px) {
+      width: 71.25vw;
+    }
+}
+
+    &__input-footer {
+    @media screen and (max-width: 768px) {
+      width: 45.25vw;
+    }
+    @media screen and (max-width: 320px) {
+        width: 71.25vw;
+    }   
+  }
+
+  &__button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: normal;
+    width: 13.8125rem;
+    height: 50px;
+    letter-spacing: 0.375px;
+    text-align: center;
+    line-height: 24px;
+    color: $textColor1;
+    background-color: #47474c;
+    cursor: pointer;
+    transition: color 0.2s;
+    border-radius: 0px 8px 8px 0px;
+
+    @media screen and (max-width: 540px) {
+      width: 51px;
+    }
+  }
+}
+
+.form-question-small {
+  @media screen and (max-width: 768px) {
+    width: 85vw;
+  }
+  @media screen and (max-width: 540px) {
+    width: 78vw;
+  }
+  @media screen and (max-width: 320px) {
+    width: 280px;
+  }
+}
+
+.form-question-footer {
+    @media screen and (max-width: 768px) {
+      width: 74vw;
+    }
+    @media screen and (max-width: 320px) {
+      width: 280px;
+    }
+  }
+
+.company {
+  margin: 0;
+  padding-left: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, 102px);
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 0;
+  }
+
+  &__subtitle-name {
+    margin: 0;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+    @media screen and (max-width: 320px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  &__subtitle-status {
+    margin: 0;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 12px;
+    color: $textColor2;
+    background-color: $backColor1;
+    border-radius: 4px;
+  }
+}
+
+.camera-backside {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 12px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 5fr 2fr;
+    grid-column-gap: 20px;
+  }
+
+  @media screen and (max-width: 320px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 16px;
+  }
+
+  &__left-block {
+    border-radius: 10px;
+    width: 100%;
+  }
+  &__right-block {
+    background-color: $backColor2;
+    border-radius: 10px;
+  }
+}
+
+.camera-frontside {
+  display: grid;
+  grid-template-columns: 6fr 7fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 18px;
+  margin: 20px 0 58px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 3fr 8fr;
+  }
+
+  @media screen and (max-width: 320px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 5fr;
+    grid-row-gap: 18px;
+    margin: 18px 0 15px;
+  }
+
+  &__left-block {
+    background-color: $backColor1;
+    border-radius: 10px;
+  }
+  &__right-block {
+    background-size: cover;
+    width: 100%;
+  }
+}
+
+.warranty {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  padding: 60px 130px 60px;
+
+  @media screen and (max-width: 768px) {
+    padding: 60px 0 62px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 20px;
+  }
+
+  @media screen and (max-width: 340px) {
+    padding: 40px 0 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 23px;
+  }
+
+  &__title {
+    font-size: 18px;
+  }
+
+  &__subtitle {
+    font-size: 15px;
+    font-weight: normal;
+    padding: 20px 0 22px;
+    margin: 0;
+    @media screen and (max-width: 320px) {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 20px 0 14px;
+      }
+  }
+
+  &__card {
+    background-color: $cardBackColor;
+    padding: 0 20px;
+    border-radius: 10px;
+    &:hover {
+      background: #232327;
+    }
+  }
+}
+
+.button-send-message {
+  border: none;
+  margin: 90px 130px -8px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: normal;
+  width: 21.1vw;
+  height: 50px;
+  letter-spacing: 0.375px;
+  text-align: center;
+  line-height: 24px;
+  color: $textColor1;
+  background-color: #47474c;
+  transition: color 0.2s;
+  border-radius: 8px;
+  @media screen and (max-width: 768px) {
+    margin: 80px 0 0;
+    width: 40vw;
+    font-size: 1.825vw;
+  }
+  @media screen and (max-width: 540px) {
+    width: 78vw;
+  }
+  @media screen and (max-width: 320px) {
+    margin: 50px 0 0;
+    width: 280px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.footer {
+  margin: 0;
+  padding: 298px 160px 18px;
+  @media screen and (max-width: 768px) {
+    padding: 270px 60px 18px;
+  }
+
+  @media screen and (max-width: 320px) {
+    padding: 210px 20px 18px;
+  }
+
+  &__company {
+    padding-left: 0;
+    margin-bottom: 84px;
+    @media screen and (max-width: 320px) {
+        margin-bottom: 184px;
+      }
+  }
+
+  &__subtitle-info {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #47474c;
+    margin: 0;
+    padding: 18px 0 118px;
+
+    @media screen and (max-width: 768px) {
+      padding: 18px 0 42px;
+    }
+    @media screen and (max-width: 320px) {
+        padding: 10px 3px 30px;
+      }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}
