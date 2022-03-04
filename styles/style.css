@@ -256,7 +256,9 @@ input[type=checkbox], input[type=radio] {
   font-family: Roboto, Arial, sans-serif;
   margin: 0;
   border: #000;
-  max-width: 1440px;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
 }
 
 .body {
@@ -265,6 +267,8 @@ input[type=checkbox], input[type=radio] {
 
 .main {
   padding: 0 30px;
+  max-width: 1440px;
+  width: 96vw;
 }
 @media screen and (max-width: 768px) {
   .main {
@@ -408,10 +412,10 @@ input[type=checkbox], input[type=radio] {
 }
 
 .header {
-  padding-left: 160px;
-  padding-top: 60px;
+  padding: 60px 160px 0;
   display: grid;
   grid-template-rows: 3;
+  width: 78vw;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -782,6 +786,7 @@ input[type=checkbox], input[type=radio] {
 .footer {
   margin: 0;
   padding: 298px 160px 18px;
+  width: 78vw;
 }
 @media screen and (max-width: 768px) {
   .footer {

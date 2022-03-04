@@ -14,8 +14,10 @@ $cardBackColor: #1c1c1e;
   color: $textColor1;
   font-family: Roboto, Arial, sans-serif;
   margin: 0;
-  border: $backColor;
-  max-width: 1440px;
+  border: $backColor; 
+  align-items: center;
+  display: flex;
+  flex-flow: column;
 }
 
 .body {
@@ -24,7 +26,8 @@ $cardBackColor: #1c1c1e;
 
 .main {
   padding: 0 30px;
-
+  max-width: 1440px;
+  width: 96vw;
   @media screen and (max-width: 768px) {
     padding: 0 60px;
   }
@@ -155,10 +158,11 @@ $cardBackColor: #1c1c1e;
 }
 
 .header {
-  padding-left: 160px;
-  padding-top: 60px;
+  
+  padding: 60px 160px 0;
   display: grid;
   grid-template-rows: 3;
+  width: 78vw;
 
   @media screen and (max-width: 768px) {
     padding-left: 60px;
@@ -498,6 +502,7 @@ $cardBackColor: #1c1c1e;
 .footer {
   margin: 0;
   padding: 298px 160px 18px;
+  width: 78vw;
   @media screen and (max-width: 768px) {
     padding: 270px 60px 18px;
   }
