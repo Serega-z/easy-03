@@ -14,7 +14,7 @@ $cardBackColor: #1c1c1e;
   color: $textColor1;
   font-family: Roboto, Arial, sans-serif;
   margin: 0;
-  border: $backColor; 
+  border: $backColor;
   align-items: center;
   display: flex;
   flex-flow: column;
@@ -27,7 +27,6 @@ $cardBackColor: #1c1c1e;
 .main {
   padding: 0 30px;
   max-width: 1440px;
-  width: 96vw;
   @media screen and (max-width: 768px) {
     padding: 0 60px;
   }
@@ -67,8 +66,8 @@ $cardBackColor: #1c1c1e;
       padding: 42px 0 0;
     }
     @media screen and (max-width: 320px) {
-        padding: 30px 0 0;
-      }
+      padding: 30px 0 0;
+    }
   }
 }
 
@@ -100,10 +99,9 @@ $cardBackColor: #1c1c1e;
     margin: 0;
 
     @media screen and (max-width: 768px) {
-        font-size: 4.1575vw;
-        line-height: 5.2vw;
+      font-size: 4.1575vw;
+      line-height: 5.2vw;
     }
-    
 
     @media screen and (max-width: 320px) {
       font-size: 24px;
@@ -158,14 +156,12 @@ $cardBackColor: #1c1c1e;
 }
 
 .header {
-  
-  padding: 60px 160px 0;
-  display: grid;
-  grid-template-rows: 3;
+  padding: 60px 0 0;
+  display: block;
   width: 78vw;
 
   @media screen and (max-width: 768px) {
-    padding-left: 60px;
+    width: 84vw;
   }
 
   @media screen and (max-width: 320px) {
@@ -219,7 +215,7 @@ $cardBackColor: #1c1c1e;
     padding: 14px 10px 118px;
 
     @media screen and (max-width: 768px) {
-        padding: 6px 10px 56px;
+      padding: 6px 10px 56px;
     }
   }
 }
@@ -259,6 +255,7 @@ $cardBackColor: #1c1c1e;
     font-weight: normal;
     line-height: 24px;
     padding: 0;
+    padding-left: 10px;
     width: 348px;
     border-radius: 8px 0 0 8px;
     @media screen and (max-width: 768px) {
@@ -271,23 +268,26 @@ $cardBackColor: #1c1c1e;
 
   &__input-small {
     @media screen and (max-width: 768px) {
-      width: 55.5vw;
+      width: 54vw;
     }
     @media screen and (max-width: 540px) {
-        width: 68.25vw;
-      }
+      width: 68.25vw;
+    }
     @media screen and (max-width: 320px) {
       width: 71.25vw;
     }
-}
+  }
 
-    &__input-footer {
+  &__input-footer {
     @media screen and (max-width: 768px) {
       width: 45.25vw;
     }
+    @media screen and (max-width: 540px) {
+      width: 68.25vw;
+    }
     @media screen and (max-width: 320px) {
-        width: 71.25vw;
-    }   
+      width: 71.25vw;
+    }
   }
 
   &__button {
@@ -296,7 +296,7 @@ $cardBackColor: #1c1c1e;
     padding: 0;
     font-size: 14px;
     font-weight: normal;
-    width: 13.8125rem;
+    width: 14rem;
     height: 50px;
     letter-spacing: 0.375px;
     text-align: center;
@@ -326,13 +326,13 @@ $cardBackColor: #1c1c1e;
 }
 
 .form-question-footer {
-    @media screen and (max-width: 768px) {
-      width: 74vw;
-    }
-    @media screen and (max-width: 320px) {
-      width: 280px;
-    }
+  @media screen and (max-width: 768px) {
+    width: 74vw;
   }
+  @media screen and (max-width: 320px) {
+    width: 280px;
+  }
+}
 
 .company {
   margin: 0;
@@ -428,6 +428,13 @@ $cardBackColor: #1c1c1e;
   grid-column-gap: 20px;
   padding: 60px 130px 60px;
 
+  @media screen and (max-width: 1200px) {
+    padding: 120px 130px 0 130px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 20px;
+  }
+
   @media screen and (max-width: 768px) {
     padding: 60px 0 62px;
     grid-template-columns: repeat(2, 1fr);
@@ -452,10 +459,10 @@ $cardBackColor: #1c1c1e;
     padding: 20px 0 22px;
     margin: 0;
     @media screen and (max-width: 320px) {
-        font-size: 12px;
-        line-height: 18px;
-        padding: 20px 0 14px;
-      }
+      font-size: 12px;
+      line-height: 18px;
+      padding: 20px 0 14px;
+    }
   }
 
   &__card {
@@ -490,6 +497,7 @@ $cardBackColor: #1c1c1e;
   }
   @media screen and (max-width: 540px) {
     width: 78vw;
+    font-size: 2.825vw;
   }
   @media screen and (max-width: 320px) {
     margin: 50px 0 0;
@@ -502,9 +510,10 @@ $cardBackColor: #1c1c1e;
 .footer {
   margin: 0;
   padding: 298px 160px 18px;
-  width: 78vw;
+  width: 84vw;
+
   @media screen and (max-width: 768px) {
-    padding: 270px 60px 18px;
+    padding: 270px 0 18px;
   }
 
   @media screen and (max-width: 320px) {
@@ -515,8 +524,8 @@ $cardBackColor: #1c1c1e;
     padding-left: 0;
     margin-bottom: 84px;
     @media screen and (max-width: 320px) {
-        margin-bottom: 184px;
-      }
+      margin-bottom: 184px;
+    }
   }
 
   &__subtitle-info {
@@ -531,8 +540,8 @@ $cardBackColor: #1c1c1e;
       padding: 18px 0 42px;
     }
     @media screen and (max-width: 320px) {
-        padding: 10px 3px 30px;
-      }
+      padding: 10px 3px 30px;
+    }
   }
 
   &__info {
